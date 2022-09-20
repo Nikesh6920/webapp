@@ -8,6 +8,10 @@
 	<version>1.0-SNAPSHOT</version>
 	<name>mvn-hello-world Maven Webapp</name>
 	<url>http://maven.apache.org</url>
+	<properties>
+    		<sonar.dependencyCheck.jsonReportPath>target/dependency-check-report.json</sonar.dependencyCheck.jsonReportPath>
+    		<sonar.dependencyCheck.htmlReportPath>target/dependency-check-report.html</sonar.dependencyCheck.htmlReportPath>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
