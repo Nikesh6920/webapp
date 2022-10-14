@@ -1,0 +1,12 @@
+name: Simple Test Workflow
+on: push
+
+jobs:
+  build:
+    name: Hello World
+    runs-on: ubuntu-latest
+    steps:
+      #- uses: actions/checkout@v3
+      - name: cd
+        run:
+          echo "Hello World!"
