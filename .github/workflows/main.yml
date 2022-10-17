@@ -23,14 +23,14 @@ jobs:
            mvn -B package --file pom.xml
            cd target && ls
            
-    - name: Veracode Upload And Scan
-      uses: veracode/veracode-uploadandscan-action@0.2.1
-      with:
-        appname: 'VeraDemo'
-        createprofile: true
-        filepath: 'target/*.war'
-        vid: '${{ secrets.API_ID }}'
-        vkey: '${{ secrets.API_KEY }}'
+#    - name: Veracode Upload And Scan
+#      uses: veracode/veracode-uploadandscan-action@0.2.1
+#      with:
+#        appname: 'VeraDemo'
+#        createprofile: true
+#        filepath: 'target/*.war'
+#        vid: '${{ secrets.API_ID }}'
+#        vkey: '${{ secrets.API_KEY }}'
 #        createsandbox: 'true'
 #        sandboxname: 'SANDBOXNAME'
 #        scantimeout: 0
