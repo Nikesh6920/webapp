@@ -23,7 +23,7 @@ jobs:
         
     - name: Build with Maven
       run: |
-           mvn clean install
+           mvn -B package --file pom.xml
            cd target && ls
            
 #    - name: Veracode Upload And Scan
