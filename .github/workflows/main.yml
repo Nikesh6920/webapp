@@ -10,7 +10,7 @@ jobs:
     - name: Git Checkout
       uses: actions/checkout@v3
       with:
-        repository: Nikesh6920/calculator
+        repository: Nikesh6920/Sample
         path: master
 
     - name: Files Check
@@ -25,7 +25,7 @@ jobs:
         
     - name: Build with Maven
       run: |
-           mvn -B package --file */pom.xml
+           mvn -B package --file /pom.xml
            cd target && ls
            
 #    - name: Veracode Upload And Scan
