@@ -9,6 +9,9 @@ jobs:
     steps:
     - name: Git Checkout
       uses: actions/checkout@v3
+      with:
+        repository: Nikesh6920/Simple-Java-WebApp
+        path: master
 #     - uses: ./.github/actions/checkout-action
 
     - name: Set up JDK 11
