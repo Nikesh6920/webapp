@@ -10,7 +10,7 @@ jobs:
     - name: Git Checkout
       uses: actions/checkout@v3
       with:
-        repository: Nikesh6920/Simple-Java-WebApp
+        repository: Nikesh6920/calculator
         path: master
 #     - uses: ./.github/actions/checkout-action
 
