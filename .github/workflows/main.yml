@@ -1,7 +1,6 @@
 name: Simple Test Workflow
-on: 
-  [pull_request]:
-  [push]:
+on: [push]
+  #[pull_request]:
 
 jobs:
   build:
